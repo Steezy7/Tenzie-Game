@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello {
+  padding: 40px;
+  background-color: white;
+  width: 95vw;        /* Use viewport width */
+  height: 90vh;       /* Use viewport height */
+  border-radius: 16px;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  padding: 200px 650px;
+  flex-direction: column;
+  border: 2px solid red;
+}
+
+.title{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.instruction{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr); /* 5 columns */
+  gap: 20px;
+}
+
+.roll-button{
+  background-color: blue;
+  color: white;
+  white-space: nowrap;
+  padding: 6px 21px;
+  border-radius: 5px;
+  width: auto;
+  height: 50px;
+  border: none;
+  align-self: center;
+}
+
+.sr-only { 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
